@@ -2,7 +2,7 @@
 
 
 :root {
-    --violet: hsl(257, 40%, 49%);
+    --violet: #674baf;
     --soft-magneta: #e882e8;
     --ffp: 'Open Sans', sans-serif;
     --ffo: 'Poppins', sans-serif;
@@ -121,6 +121,13 @@ button:hover {
 
 .links ul li a img:hover {
     transform: scale(1.1);
+}
+
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--ffp);
 }
 
 
