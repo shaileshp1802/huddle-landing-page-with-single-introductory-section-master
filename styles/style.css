@@ -128,7 +128,7 @@ button:hover {
 }
 
 
-.attribution a {
+.attribution a, a:visited {
     color: white;
     text-decoration: none;
     font-family: var(--ffp);
