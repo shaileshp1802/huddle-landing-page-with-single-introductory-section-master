@@ -2,8 +2,8 @@
 
 
 :root {
-    --violet : hsl(257, 40%, 49%);
-    --soft-magneta: hsla(300, 69%, 71%, 1);
+    --violet: hsl(257, 40%, 49%);
+    --soft-magneta: #e882e8;
     --ffp: 'Open Sans', sans-serif;
     --ffo: 'Poppins', sans-serif;
     --iconSize: 2.5rem;
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--violet);
 }
 
@@ -32,7 +32,8 @@ body{
     /* background-color: var(--violet); */
 }
 
-.main, .content {
+.main,
+.content {
     display: flex;
     /* position: relative; */
     /* align-items: center; */
@@ -102,7 +103,7 @@ button:hover {
 .links ul li img {
     width: var(--iconSize);
     height: var(--iconSize);
-    margin: 0.7rem;
+    margin-right: 0.7rem;
 }
 
 
@@ -118,9 +119,16 @@ button:hover {
     width: 15rem;
 }
 
+.links ul li a img:hover {
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 900px) {
-    .main, .content, .section {
+
+    .main,
+    .content,
+    .section {
 
         margin: 0;
         flex-direction: column;
@@ -130,8 +138,20 @@ button:hover {
 
     .section {
         position: relative;
+        display: flex;
+        align-items: center;
     }
-    
+
+    .links {
+        position: relative;
+        bottom: 0;
+    }
+
+    /* ul {
+        position: absolute;
+        top: 0;
+    } */
+
     .content {
         padding: 0;
         justify-content: center;
@@ -139,8 +159,8 @@ button:hover {
         flex-basis: auto;
     }
 
-    .links ul{
-        justify-content: space-evenly;
+    .links ul {
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -154,6 +174,11 @@ button:hover {
     .container {
         background-image: url(../images/bg-mobile.svg);
         background-size: cover;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
     }
 
 }
