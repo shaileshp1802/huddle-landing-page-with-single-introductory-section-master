@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    color: var(--soft-magneta);
+}
+
 body {
     background-color: var(--violet);
 }
@@ -128,6 +132,10 @@ button:hover {
     color: white;
     text-decoration: none;
     font-family: var(--ffp);
+}
+
+.attribution::selection {
+    color: black;
 }
 
 
